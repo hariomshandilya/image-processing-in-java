@@ -44,3 +44,6 @@ public class FaceDetector
         // calling any of the opencv methods 
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME); 
   
+ // Input image 
+        Mat image = Imgcodecs.imread("E:\\input.jpg"); 
+  
