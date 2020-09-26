@@ -57,3 +57,8 @@ public class FaceDetector
              new Point(rect.x + rect.width, rect.y + rect.height), 
                                            new Scalar(0, 255, 0)); 
         } 
+ // Saving the output image 
+        String filename = "Ouput.jpg"; 
+        Imgcodecs.imwrite("E:\\"+filename, image); 
+    } 
+} 
