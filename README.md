@@ -1,1 +1,10 @@
 # image-processing-in-java
+In the introductory set on Image Processing, BufferedImage class of Java was used for processing images the applications of BufferedImage class is limited to some operations only, i.e, we can modify the R, G, B values of given input image and produce the modified image. For complex image processing such as face/object detection OpenCV library is used which we will use in this article.
+
+At first we need to setup OpenCV for Java, we recommend to use eclipse for the same since it is easy to use and setup.
+
+Now lets understand some of the methods required for face detection.
+
+CascadeClassifier() : This class is used to load the trained cascaded set of faces which we will be using to detect face for any input image.
+Imcodecs.imread()/Imcodecs.imwrite() : These methods are used to read and write images as Mat objects which are rendered by OpenCV.
+Imgproc.rectangle() : Used to generate rectangle box outlining faces detected, it takes four arguments – input_image, top_left_point, bottom_right_point, color_of_border.
