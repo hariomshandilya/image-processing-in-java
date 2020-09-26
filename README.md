@@ -46,4 +46,7 @@ public class FaceDetector
   
  // Input image 
         Mat image = Imgcodecs.imread("E:\\input.jpg"); 
+   // Detecting faces 
+        MatOfRect faceDetections = new MatOfRect(); 
+        faceDetector.detectMultiScale(image, faceDetections); 
   
