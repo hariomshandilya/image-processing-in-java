@@ -50,3 +50,10 @@ public class FaceDetector
         MatOfRect faceDetections = new MatOfRect(); 
         faceDetector.detectMultiScale(image, faceDetections); 
   
+// Creating a rectangular box showing faces detected 
+        for (Rect rect : faceDetections.toArray()) 
+        { 
+            Imgproc.rectangle(image, new Point(rect.x, rect.y), 
+             new Point(rect.x + rect.width, rect.y + rect.height), 
+                                           new Scalar(0, 255, 0)); 
+        } 
