@@ -27,3 +27,13 @@ import org.opencv.core.Scalar;
 import org.opencv.imgcodecs.Imgcodecs; 
 import org.opencv.imgproc.Imgproc; 
 import org.opencv.objdetect.CascadeClassifier;
+public class FaceDetector 
+{ 
+    public static void main(String[] args) 
+    { 
+  
+        // For proper execution of native libraries 
+        // Core.NATIVE_LIBRARY_NAME must be loaded before 
+        // calling any of the opencv methods 
+        System.loadLibrary(Core.NATIVE_LIBRARY_NAME); 
+  
