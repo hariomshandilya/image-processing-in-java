@@ -8,3 +8,10 @@ Now lets understand some of the methods required for face detection.
 CascadeClassifier() : This class is used to load the trained cascaded set of faces which we will be using to detect face for any input image.
 Imcodecs.imread()/Imcodecs.imwrite() : These methods are used to read and write images as Mat objects which are rendered by OpenCV.
 Imgproc.rectangle() : Used to generate rectangle box outlining faces detected, it takes four arguments – input_image, top_left_point, bottom_right_point, color_of_border.
+// Java program to demonstrate face detection 
+package ocv; 
+  
+import org.opencv.core.Core; 
+import org.opencv.core.Mat; 
+import org.opencv.core.MatOfRect; 
+import org.opencv.core.Point; 
