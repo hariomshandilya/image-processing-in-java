@@ -15,3 +15,10 @@ import org.opencv.core.Core;
 import org.opencv.core.Mat; 
 import org.opencv.core.MatOfRect; 
 import org.opencv.core.Point; 
+// Java program to demonstrate face detection 
+package ocv; 
+  
+import org.opencv.core.Core; 
+import org.opencv.core.Mat; 
+import org.opencv.core.MatOfRect; 
+import org.opencv.core.Point; 
