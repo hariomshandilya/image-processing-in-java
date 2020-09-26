@@ -31,7 +31,14 @@ public class FaceDetector
 { 
     public static void main(String[] args) 
     { 
-  
+  // Face detector creation by loading source cascade xml file 
+        // using CascadeClassifier. 
+        // the file can be downloade from 
+        // https://github.com/opencv/opencv/blob/master/data/haarcascades/ 
+        // haarcascade_frontalface_alt.xml 
+        // and must be placed in same directory of the source java file 
+        CascadeClassifier faceDetector = new CascadeClassifier(); 
+        faceDetector.load("haarcascade_frontalface_alt.xml"); 
         // For proper execution of native libraries 
         // Core.NATIVE_LIBRARY_NAME must be loaded before 
         // calling any of the opencv methods 
